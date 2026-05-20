@@ -95,10 +95,10 @@ EcoScoreEngine/
 | Nome | RM | GitHub | LinkedIn |
 |---|---|---|---|
 | Leonardo Afonço Sousa | RM573982 | [Leonardo-2112](https://github.com/Leonardo-2112) | [leonardoafoncosousa](https://www.linkedin.com/in/leonardoafoncosousa/) |
-| Matheus Jones | RM573559 | [Matheus-Jones](https://github.com/Matheus-Jones) | [LinkedIn](https://www.linkedin.com/in/matheus-jones10/) |
+| Matheus Jones | RM573559 | [Matheus-Jones](https://github.com/Matheus-Jones) | [matheus-jones10](https://www.linkedin.com/in/matheus-jones10/) |
 | Syang Cristina Gomes Souza | RM569259 | [SyangSouzaa](https://github.com/SyangSouzaa) | [syang-souza](https://www.linkedin.com/in/syang-souza/) |
-| Joao Machado Nascimento | RM572364 | [MachadoJN](https://github.com/MachadoJN) | [LinkedIn](https://www.linkedin.com/) |
-| Vitor Gonçalves de Souza | RM569023 | [v1torceleste](https://github.com/v1torceleste) | [LinkedIn](https://www.linkedin.com/) |
+| Joao Machado Nascimento | RM572364 | [MachadoJN](https://github.com/MachadoJN) | [machado-493178300)](https://www.linkedin.com/in/jo%C3%A3o-machado-493178300) |
+| Vitor Gonçalves de Souza | RM569023 | [v1torceleste](https://github.com/v1torceleste) | [vitor-souza-39aa422b4](https://www.linkedin.com/in/vitor-souza-39aa422b4/) |
 
 ---
 
