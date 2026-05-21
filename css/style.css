@@ -272,3 +272,15 @@ p {
 .muted {
   color: var(--muted);
 }
+
+.icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 14px;
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+  color: var(--primary-dark);
+  font-weight: 900;
+}
