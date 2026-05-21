@@ -296,3 +296,13 @@ p {
   font-size: 2rem;
   line-height: 1;
 }
+
+.page-hero {
+  padding: 72px 0 44px;
+  background: var(--surface-strong);
+}
+
+.page-hero h1 {
+  max-width: 14ch;
+  color: var(--primary-dark);
+}
