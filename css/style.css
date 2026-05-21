@@ -468,3 +468,12 @@ textarea {
 .campaign-item:last-child {
   border-bottom: 0;
 }
+
+.member-photo {
+  width: 104px;
+  height: 104px;
+  margin-bottom: 16px;
+  border: 3px solid var(--surface-strong);
+  border-radius: 50%;
+  object-fit: cover;
+}
