@@ -334,3 +334,10 @@ p {
   font-size: 0.78rem;
   font-weight: 800;
 }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
