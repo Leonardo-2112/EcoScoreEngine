@@ -357,21 +357,6 @@ p {
   color: #fff;
 }
 
-.tab-button {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-  padding: 10px 14px;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.tab-button.active {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: #fff;
-}
-
 .tab-panel {
   display: none;
 }
@@ -384,3 +369,11 @@ p {
   display: grid;
   gap: 16px;
 }
+
+label {
+  display: grid;
+  gap: 6px;
+  color: var(--text);
+  font-weight: 800;
+}
+
