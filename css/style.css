@@ -389,3 +389,8 @@ textarea {
   color: var(--text);
   font: inherit;
 }
+
+textarea {
+  min-height: 132px;
+  resize: vertical;
+}
