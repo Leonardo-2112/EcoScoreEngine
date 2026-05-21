@@ -522,3 +522,26 @@ textarea {
 .faq-item.open .faq-answer {
   display: block;
 }
+
+.site-footer {
+  padding: 36px 0;
+  background: #13231b;
+  color: #edf4ee;
+}
+
+.footer-grid {
+  width: min(100% - 32px, var(--max));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 24px;
+}
+
+.footer-links {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #cfe2d4;
+}
