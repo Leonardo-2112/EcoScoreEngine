@@ -399,3 +399,13 @@ textarea {
   color: var(--danger);
   font-size: 0.86rem;
 }
+
+.notice {
+  display: none;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+  color: var(--primary-dark);
+  font-weight: 800;
+}
