@@ -477,3 +477,18 @@ textarea {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.social-links a {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--primary-dark);
+  font-weight: 800;
+}
