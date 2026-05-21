@@ -453,3 +453,18 @@ textarea {
 .range-label {
   margin-top: 18px;
 }
+
+.ranking-item,
+.campaign-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.ranking-item:last-child,
+.campaign-item:last-child {
+  border-bottom: 0;
+}
