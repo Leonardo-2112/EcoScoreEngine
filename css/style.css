@@ -146,3 +146,24 @@ a {
   color: var(--primary-dark);
   border-color: var(--border);
 }
+
+.hero {
+  min-height: calc(100vh - 72px);
+  display: grid;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(9, 32, 25, 0.86), rgba(9, 32, 25, 0.54)),
+    url("../img/hero-ecoscore.svg") center/cover no-repeat;
+  color: #fff;
+}
+
+.hero-inner,
+.container {
+  width: min(100% - 32px, var(--max));
+  margin: 0 auto;
+}
+
+.hero-content {
+  max-width: 730px;
+  padding: 64px 0 92px;
+}
