@@ -427,3 +427,17 @@ textarea {
   color: var(--primary-dark);
   font-weight: 700;
 }
+
+.progress {
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-strong);
+}
+
+.progress span {
+  display: block;
+  width: var(--value, 50%);
+  height: 100%;
+  background: var(--primary);
+}
