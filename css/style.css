@@ -379,3 +379,8 @@ p {
 .tab-panel.active {
   display: block;
 }
+
+.form-grid {
+  display: grid;
+  gap: 16px;
+}
