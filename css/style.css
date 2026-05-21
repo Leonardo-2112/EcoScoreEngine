@@ -1,0 +1,32 @@
+:root {
+  --bg: #f6f8f5;
+  --surface: #ffffff;
+  --surface-strong: #edf4ee;
+  --text: #17211b;
+  --muted: #5a675f;
+  --primary: #167a58;
+  --primary-dark: #0d4d39;
+  --accent: #f2b84b;
+  --blue: #2673a6;
+  --danger: #b84a4a;
+  --border: #dce7df;
+  --shadow: 0 18px 48px rgba(21, 50, 35, 0.12);
+  --radius: 8px;
+  --max: 1160px;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
