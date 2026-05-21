@@ -284,3 +284,15 @@ p {
   color: var(--primary-dark);
   font-weight: 900;
 }
+
+.stat {
+  padding: 20px;
+  border-left: 4px solid var(--primary);
+  background: var(--surface);
+}
+
+.stat strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+}
