@@ -441,3 +441,7 @@ textarea {
   height: 100%;
   background: var(--primary);
 }
+
+.result-grid {
+  margin-top: 20px;
+}
