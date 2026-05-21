@@ -409,3 +409,7 @@ textarea {
   color: var(--primary-dark);
   font-weight: 800;
 }
+
+.notice.show {
+  display: block;
+}
