@@ -357,21 +357,6 @@ p {
   color: #fff;
 }
 
-.tab-button {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-  padding: 10px 14px;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.tab-button.active {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: #fff;
-}
-
 .tab-panel {
   display: none;
 }
@@ -383,4 +368,239 @@ p {
 .form-grid {
   display: grid;
   gap: 16px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+textarea {
+  min-height: 132px;
+  resize: vertical;
+}
+
+.field-error {
+  color: var(--danger);
+  font-size: 0.86rem;
+}
+
+.notice {
+  display: none;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+.notice.show {
+  display: block;
+}
+
+.calculator,
+.dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 20px;
+}  
+
+.result-number {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  line-height: 1;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.progress {
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-strong);
+}
+
+.progress span {
+  display: block;
+  width: var(--value, 50%);
+  height: 100%;
+  background: var(--primary);
+}
+
+.result-grid {
+  margin-top: 20px;
+}
+
+.formula-note {
+  margin-top: 18px;
+}
+
+.range-label {
+  margin-top: 18px;
+}
+
+.ranking-item,
+.campaign-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.ranking-item:last-child,
+.campaign-item:last-child {
+  border-bottom: 0;
+}
+
+.member-photo {
+  width: 104px;
+  height: 104px;
+  margin-bottom: 16px;
+  border: 3px solid var(--surface-strong);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.social-links a {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  min-height: 58px;
+  border: 0;
+  background: transparent;
+  padding: 16px 18px;
+  color: var(--text);
+  font: inherit;
+  font-weight: 900;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 18px 18px;
+  color: var(--muted);
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.site-footer {
+  padding: 36px 0;
+  background: #13231b;
+  color: #edf4ee;
+}
+
+.footer-grid {
+  width: min(100% - 32px, var(--max));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 24px;
+}
+
+.footer-links {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #cfe2d4;
+}
+
+@media (max-width: 920px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    inset: 72px 16px auto 16px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .grid-3,
+  .grid-4,
+  .calculator,
+  .dashboard,
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-content,
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-head {
+    display: block;
+  }
+
+  .section-head p {
+    margin-top: 12px;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .calculator,
+  .dashboard,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
 }
