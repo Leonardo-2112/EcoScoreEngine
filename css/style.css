@@ -394,3 +394,8 @@ textarea {
   min-height: 132px;
   resize: vertical;
 }
+
+.field-error {
+  color: var(--danger);
+  font-size: 0.86rem;
+}
