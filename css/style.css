@@ -209,3 +209,11 @@ p {
   color: inherit;
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
+
+.hero-actions,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
