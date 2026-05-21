@@ -110,3 +110,9 @@ a {
   font-size: 0.95rem;
   font-weight: 700;
 }
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: var(--surface-strong);
+  color: var(--primary-dark);
+}
