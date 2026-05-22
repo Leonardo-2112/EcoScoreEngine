@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Empresas | EcoScore Engine</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Menu principal">
+        <a class="brand" href="../index.html"><span class="brand-mark">E</span> EcoScore Engine</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="../index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="app.html">App</a>
+          <a href="empresas.html">Empresas</a>
+          <a href="integrantes.html">Integrantes</a>
+          <a href="faq.html">FAQ</a><a href="contato.html">Contato</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Página da solução 2</p>
+          <h1>Dashboard ESG corporativo</h1>
+          <p class="lead">
+            Empresas financiam campanhas sustentáveis e recebem impacto
+            ambiental, adesão dos usuários, ranking e dados para relatórios.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+      <div class="container dashboard">
+        <article class="card">
+          <h2>Campanha patrocinada</h2>
+          <p class="muted">Simule o investimento de uma empresa em uma campanha de economia de energia.</p><label
+            class="range-label">Investimento<input id="investmentRange" type="range" min="20000" max="180000"
+              value="100000" step="5000"></label>
+          <p class="result-number" id="investmentValue">R$ 100.000,00</p>
+        </article>
+
+        <article class="card">
+          <h2>Impacto estimado</h2>
+          <div class="grid grid-3">
+          <div class="stat"><strong id="usersValue">0</strong><span>usuários ativos</span></div>
+          <div class="stat"><strong id="actionsValue">0</strong><span>ações registradas</span></div>
+          <div class="stat"><strong id="co2Value">0 kg</strong><span>CO2 evitado</span></div></div>
+          <div class="campaign-item"><span>Economia de energia</span><strong>46%</strong></div>
+          <div class="campaign-item"><span>Transporte público</span><strong>31%</strong></div>
+          <div class="campaign-item"><span>Reciclagem</span><strong>23%</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Modelo de negócio</p>
+            <h2>Receita B2B realista</h2>
+          </div>
+          <p>O melhor posicionamento é vender uma plataforma ESG mensurável, não apenas um aplicativo sustentável.</p>
+        </div>
+        <div class="tabs" role="tablist"><button class="tab-button active" type="button"
+            data-tab="modelo1">Campanhas</button><button class="tab-button" type="button" data-tab="modelo2">SaaS
+            ESG</button><button class="tab-button" type="button" data-tab="modelo3">Benefício interno</button><button
+            class="tab-button" type="button" data-tab="modelo4">Marketplace</button></div>
+        <article id="modelo1" class="tab-panel active card">
+          <h3>Campanhas ESG patrocinadas</h3>
+          <p>Empresas compram campanhas dentro da plataforma. Usuários registram economia, recebem créditos e a empresa
+            recebe dashboard ESG, dados da campanha e relatórios de impacto.</p>
+        </article>
+        <article id="modelo2" class="tab-panel card">
+          <h3>ESG as a Service</h3>
+          <p>Planos corporativos com dashboard, campanhas, analytics, relatórios e ranking interno. Público ideal:
+            grandes empresas, RH, bancos e universidades.</p>
+        </article>
+        <article id="modelo3" class="tab-panel card">
+          <h3>Benefício corporativo interno</h3>
+          <p>Funcionários realizam ações sustentáveis, gerando gamificação, cultura ESG, redução de desperdício e
+            engajamento interno.</p>
+        </article>
+        <article id="modelo4" class="tab-panel card">
+          <h3>Marketplace ESG</h3>
+          <p>Empresas compram créditos sustentáveis ou patrocinam ações específicas, como mobilidade urbana com
+            recompensa premium.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3">
+        <article class="card">
+          <h3>Por que empresas entram?</h3>
+          <p>Compliance ESG, reputação, inteligência de dados, retenção de clientes, engajamento de usuários, relatórios
+            para investidores e diferencial de mercado.</p>
+        </article>
+        <article class="card">
+          <h3>Planos sugeridos</h3>
+          <p>Small: R$ 2k/mês. Business: R$ 10k/mês. Enterprise: R$ 50k/mês, com campanhas e relatórios avançados.</p>
+        </article>
+        <article class="card">
+          <h3>Antifraude</h3>
+          <p>Limite de 2 ações por dia por tipo, confiabilidade por validação e redução por repetição preservam a
+            integridade da campanha.</p>
+        </article>
+      </div>
+    </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-grid">
+      <div><strong>EcoScore Engine</strong>
+        <p>Dashboard ESG para campanhas patrocinadas.</p>
+      </div>
+      <div class="footer-links"><strong>Solução</strong><a href="app.html">App</a><a href="sobre.html">Sobre</a></div>
+      <div class="footer-links"><strong>Projeto</strong><a href="integrantes.html">Integrantes</a><a
+          href="contato.html">Contato</a></div>
+    </div>
+  </footer>
+  </body>
+  
 </html>
