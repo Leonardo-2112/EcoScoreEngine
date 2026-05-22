@@ -42,3 +42,39 @@ function setupFaq() {
     });
   });
 }
+
+function setupContactForm() {
+  const form = $("#contactForm");
+  if (!form) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let valid = true;
+    $$(".field-error", form).forEach((error) => (error.textContent = ""));
+
+    ["name", "email", "message"].forEach((id) => {
+      const field = $(`#${id}`);
+      const error = $(`[data-error="${id}"]`);
+      if (!field.value.trim()) {
+        valid = false;
+        error.textContent = "Preencha este campo.";
+      }
+    });
+
+    const email = $("#email");
+    if (email.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+      valid = false;
+      $('[data-error="email"]').textContent = "Informe um e-mail válido.";
+    }
+
+    const notice = $("#formNotice");
+    if (valid) {
+      notice.textContent = "Mensagem registrada no protótipo. Em produção, ela seria enviada para a equipe.";
+      notice.classList.add("show");
+      form.reset();
+    } else {
+      notice.textContent = "Revise os campos destacados antes de enviar.";
+      notice.classList.add("show");
+    }
+  });
+}
