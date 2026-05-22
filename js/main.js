@@ -125,3 +125,22 @@ function setupCalculator() {
   form.addEventListener("change", calculate);
   calculate();
 }
+
+function setupDashboardControls() {
+  const range = $("#investmentRange");
+  if (!range) return;
+
+  function update() {
+    const investment = Number(range.value);
+    const users = Math.round(investment / 22);
+    const actions = Math.round(users * 3.4);
+    const co2 = Math.round(actions * 1.8);
+    $("#investmentValue").textContent = investment.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+    $("#usersValue").textContent = users.toLocaleString("pt-BR");
+    $("#actionsValue").textContent = actions.toLocaleString("pt-BR");
+    $("#co2Value").textContent = `${co2.toLocaleString("pt-BR")} kg`;
+  }
+
+  range.addEventListener("input", update);
+  update();
+}
