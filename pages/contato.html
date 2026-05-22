@@ -31,14 +31,24 @@
             </div>
         </nav>
     </header>
-    <section class="page-hero">
-        <div class="container">
-            <p class="eyebrow">Fale com a equipe</p>
-            <h1>Contato</h1>
-            <p class="lead">Formulário com validação em JavaScript para demonstrar feedback visual, bloqueio de envio
-                inválido e mensagens claras.</p>
-        </div>
-    </section>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Fale com a equipe</p>
+                <h1>Contato</h1>
+                <p class="lead">Formulário com validação em JavaScript para demonstrar feedback visual, bloqueio de
+                    envio
+                    inválido e mensagens claras.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container grid grid-2">
+                <article class="card">
+                    <h2>Enviar mensagem</h2>
+                    <form id="contactForm" class="form-grid" novalidate>
+                        <label for="name">Nome<input id="name" name="name" type="text" placeholder="Seu nome">
+                            <span class="field-error" data-error="name"></span>
+                        </label>
 </body>
 
 </html>
