@@ -11,16 +11,8 @@
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Menu principal">
-        <a class="brand" href="../index.html"
-          ><span class="brand-mark">E</span> EcoScore Engine</a
-        >
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-label="Abrir menu"
-          aria-expanded="false"
-        >
-          <span></span><span></span><span></span>
+        <a class="brand" href="../index.html"><span class="brand-mark">E</span> EcoScore Engine</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span>
         </button>
         <div class="nav-links">
           <a href="../index.html">Início</a>
@@ -44,50 +36,67 @@
           </p>
         </div>
       </section>
-    </main>
-    <section class="section">
+
+      <section class="section">
       <div class="container dashboard">
         <article class="card">
           <h2>Campanha patrocinada</h2>
-          <p class="muted">
-            Simule o investimento de uma empresa em uma campanha de economia de
-            energia.
-          </p>
-          <label class="range-label"
-            >Investimento<input
-              id="investmentRange"
-              type="range"
-              min="20000"
-              max="180000"
-              value="100000"
-              step="5000"
-          /></label>
+          <p class="muted">Simule o investimento de uma empresa em uma campanha de economia de energia.</p><label
+            class="range-label">Investimento<input id="investmentRange" type="range" min="20000" max="180000"
+              value="100000" step="5000"></label>
           <p class="result-number" id="investmentValue">R$ 100.000,00</p>
         </article>
+
         <article class="card">
           <h2>Impacto estimado</h2>
           <div class="grid grid-3">
-            <div class="stat">
-              <strong id="usersValue">0</strong><span>usuários ativos</span>
-            </div>
-            <div class="stat">
-              <strong id="actionsValue">0</strong><span>ações registradas</span>
-            </div>
-            <div class="stat">
-              <strong id="co2Value">0 kg</strong><span>CO2 evitado</span>
-            </div>
-          </div>
-          <div class="campaign-item">
-            <span>Economia de energia</span><strong>46%</strong>
-          </div>
-          <div class="campaign-item">
-            <span>Transporte público</span><strong>31%</strong>
-          </div>
-          <div class="campaign-item">
-            <span>Reciclagem</span><strong>23%</strong>
-          </div>
+          <div class="stat"><strong id="usersValue">0</strong><span>usuários ativos</span></div>
+          <div class="stat"><strong id="actionsValue">0</strong><span>ações registradas</span></div>
+          <div class="stat"><strong id="co2Value">0 kg</strong><span>CO2 evitado</span></div></div>
+          <div class="campaign-item"><span>Economia de energia</span><strong>46%</strong></div>
+          <div class="campaign-item"><span>Transporte público</span><strong>31%</strong></div>
+          <div class="campaign-item"><span>Reciclagem</span><strong>23%</strong></div>
         </article>
       </div>
     </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Modelo de negócio</p>
+            <h2>Receita B2B realista</h2>
+          </div>
+          <p>O melhor posicionamento é vender uma plataforma ESG mensurável, não apenas um aplicativo sustentável.</p>
+        </div>
+        <div class="tabs" role="tablist"><button class="tab-button active" type="button"
+            data-tab="modelo1">Campanhas</button><button class="tab-button" type="button" data-tab="modelo2">SaaS
+            ESG</button><button class="tab-button" type="button" data-tab="modelo3">Benefício interno</button><button
+            class="tab-button" type="button" data-tab="modelo4">Marketplace</button></div>
+        <article id="modelo1" class="tab-panel active card">
+          <h3>Campanhas ESG patrocinadas</h3>
+          <p>Empresas compram campanhas dentro da plataforma. Usuários registram economia, recebem créditos e a empresa
+            recebe dashboard ESG, dados da campanha e relatórios de impacto.</p>
+        </article>
+        <article id="modelo2" class="tab-panel card">
+          <h3>ESG as a Service</h3>
+          <p>Planos corporativos com dashboard, campanhas, analytics, relatórios e ranking interno. Público ideal:
+            grandes empresas, RH, bancos e universidades.</p>
+        </article>
+        <article id="modelo3" class="tab-panel card">
+          <h3>Benefício corporativo interno</h3>
+          <p>Funcionários realizam ações sustentáveis, gerando gamificação, cultura ESG, redução de desperdício e
+            engajamento interno.</p>
+        </article>
+        <article id="modelo4" class="tab-panel card">
+          <h3>Marketplace ESG</h3>
+          <p>Empresas compram créditos sustentáveis ou patrocinam ações específicas, como mobilidade urbana com
+            recompensa premium.</p>
+        </article>
+      </div>
+    </section>
+
+
+    </main>
   </body>
 </html>
