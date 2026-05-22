@@ -17,3 +17,19 @@ function setupNavigation() {
     if (href.endsWith(current)) link.classList.add("active");
   });
 }
+
+function setupTabs() {
+  $$(".tabs").forEach((tabs) => {
+    const scope = tabs.closest("section") || document;
+    const buttons = $$(".tab-button", tabs);
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        buttons.forEach((item) => item.classList.remove("active"));
+        $$(".tab-panel", scope).forEach((panel) => panel.classList.remove("active"));
+        button.classList.add("active");
+        const panel = $(`#${button.dataset.tab}`, scope);
+        if (panel) panel.classList.add("active");
+      });
+    });
+  });
+}
