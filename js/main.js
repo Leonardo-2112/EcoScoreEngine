@@ -78,3 +78,50 @@ function setupContactForm() {
     }
   });
 }
+
+function setupCalculator() {
+  const form = $("#scoreForm");
+  if (!form) return;
+
+  const actionImpact = {
+    reciclagem: 5,
+    transporte: 8,
+    energia: 9,
+    agua: 7,
+    voluntariado: 6
+  };
+
+  const reliability = {
+    validado: 1,
+    parcial: 0.7,
+    pendente: 0.4
+  };
+
+  const levelBonus = {
+    1: 1,
+    2: 1.1,
+    3: 1.2,
+    4: 1.3
+  };
+
+   function calculate() {
+    const type = $("#actionType").value;
+    const repeats = Math.max(Number($("#repeats").value), 1);
+    const trust = $("#reliability").value;
+    const level = $("#level").value;
+    const frequency = 1 / repeats;
+    const points = Math.round(actionImpact[type] * 10 * frequency * reliability[trust] * levelBonus[level]);
+    const credits = (points / 100).toFixed(2);
+    const money = (credits / 10).toFixed(2);
+
+    $("#pointsResult").textContent = points;
+    $("#creditsResult").textContent = `${credits} créditos`;
+    $("#moneyResult").textContent = `R$ ${money}`;
+    $("#formulaResult").textContent = `(${actionImpact[type]} x 10 x ${frequency.toFixed(2)} x ${reliability[trust]}) x ${levelBonus[level]}`;
+    $("#scoreProgress").style.setProperty("--value", `${Math.min(points, 100)}%`);
+  }
+
+  form.addEventListener("input", calculate);
+  form.addEventListener("change", calculate);
+  calculate();
+}
