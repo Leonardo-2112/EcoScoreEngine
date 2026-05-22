@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | EcoScore Engine</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
 </head>
+
 <body>
-    
+    <header class="site-header">
+        <nav class="nav" aria-label="Menu principal">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">E</span>
+                EcoScore Engine
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="app.html">App</a>
+                <a href="empresas.html">Empresas</a>
+                <a href="integrantes.html">Integrantes</a>
+                <a href="faq.html">FAQ</a><a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Fale com a equipe</p>
+                <h1>Contato</h1>
+                <p class="lead">Formulário com validação em JavaScript para demonstrar feedback visual, bloqueio de
+                    envio
+                    inválido e mensagens claras.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container grid grid-2">
+                <article class="card">
+                    <h2>Enviar mensagem</h2>
+                    <form id="contactForm" class="form-grid" novalidate>
+                        <label for="name">Nome<input id="name" name="name" type="text" placeholder="Seu nome">
+                            <span class="field-error" data-error="name"></span>
+                        </label>
+                        <label for="email">E-mail<input id="email" name="email" type="email"
+                                placeholder="voce@email.com">
+                            <span class="field-error" data-error="email"></span>
+                        </label>
+                        <label for="subject">Assunto<select id="subject" name="subject">
+                                <option>Campanha ESG</option>
+                                <option>Dúvidas sobre o projeto</option>
+                                <option>Parceria acadêmica</option>
+                            </select>
+                        </label>
+                        <label for="message">Mensagem
+                            <textarea id="message" name="message" placeholder="Escreva sua mensagem"></textarea>
+                            <span class="field-error" data-error="message"></span>
+                        </label>
+                        <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+                        <p id="formNotice" class="notice" role="status"></p>
+                    </form>
+                </article>
+                <aside class="card">
+                    <h2>Informações</h2>
+                    <p class="muted">Projeto acadêmico desenvolvido para o Challenge SoulUp/FIAP 2026.</p>
+                    <div class="campaign-item">
+                        <span>E-mail</span>
+                        <strong>ecoscore@fiap.com.br</strong>
+                    </div>
+                    <div class="campaign-item">
+                        <span>Turma</span>
+                        <strong>1TDSPV</strong>
+                    </div>
+                    <div class="campaign-item">
+                        <span>Repositório</span>
+                        <strong><a href="https://github.com/Leonardo-2112/EcoScoreEngine"></a></strong>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div><strong>EcoScore Engine</strong>
+                <p>Contato e validação de formulário.</p>
+            </div>
+            <div class="footer-links">
+                <strong>Navegação</strong>
+                <a href="../index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="footer-links">
+                <strong>Solução</strong>
+                <a href="app.html">App</a>
+                <a href="empresas.html">Empresas</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
