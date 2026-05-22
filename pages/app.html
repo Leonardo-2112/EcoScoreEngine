@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App e Simulador | EcoScore Engine</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
 </head>
+
 <body>
-    
+    <header class="site-header">
+        <nav class="nav" aria-label="Menu principal">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">E</span>EcoScore Engine
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="app.html">App</a>
+                <a href="empresas.html">Empresas</a>
+                <a href="integrantes.html">Integrantes</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Página da solução 1</p>
+                <h1>Simulador do usuário</h1>
+                <p class="lead">Demonstração prática da pontuação por ação sustentável, com conversão para créditos e
+                    valor estimado em reais.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container calculator">
+                <article class="card">
+                    <h2>Registrar ação</h2>
+                    <form id="scoreForm" class="form-grid">
+                        <label>Tipo de ação
+                            <select id="actionType">
+                                <option value="reciclagem">Reciclagem</option>
+                                <option value="transporte">Transporte público</option>
+                                <option value="energia">Economia de energia</option>
+                                <option value="agua">Economia de água</option>
+                                <option value="voluntariado">Voluntariado ambiental</option>
+                            </select>
+                        </label>
+                        <label>Repetições no período
+                            <input id="repeats" type="number" min="1" max="10" value="1">
+                        </label>
+                        <label>Confiabilidade
+                            <select id="reliability">
+                                <option value="validado">Validado</option>
+                                <option value="parcial">Parcial</option>
+                                <option value="pendente">Pendente</option>
+                            </select>
+                        </label>
+                        <label>Nível do usuário
+                            <select id="level">
+                                <option value="1">Nível 1</option>
+                                <option value="2">Nível 2</option>
+                                <option value="3">Nível 3</option>
+                                <option value="4">Nível 4</option>
+                            </select>
+                        </label>
+                    </form>
+                </article>
+                <article class="card">
+                    <h2>Resultado</h2>
+                    <p class="result-number">
+                        <span id="pointsResult">0</span>
+                    </p>
+                    <p class="muted">pontos calculados</p>
+                    <div class="progress" aria-label="Progresso até 100 pontos">
+                        <span id="scoreProgress"></span>
+                    </div>
+                    <div class="grid grid-2 result-grid">
+                        <div class="stat">
+                            <strong id="creditsResult">0 créditos</strong>
+                            <span>100 pontos = 1 crédito</span>
+                        </div>
+                        <div class="stat">
+                            <strong id="moneyResult">R$ 0,00</strong>
+                            <span>10 créditos = R$ 1,00</span>
+                        </div>
+                    </div>
+                    <p class="muted formula-note">Fórmula aplicada:
+                        <span id="formulaResult"></span>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">Progressão</p>
+                        <h2>Missões e níveis</h2>
+                    </div>
+                    <p>O nível não diminui quando o usuário converte pontos ou usa créditos. A evolução depende das
+                        missões concluídas.</p>
+                </div>
+                <div class="grid grid-4">
+                    <article class="card">
+                        <h3>Nível 1</h3>
+                        <p>0 a 4 missões concluídas. Bônus x1.0.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Nível 2</h3>
+                        <p>5 a 9 missões concluídas. Bônus x1.1.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Nível 3</h3>
+                        <p>10 a 19 missões concluídas. Bônus x1.2.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Nível 4</h3>
+                        <p>20+ missões concluídas. Bônus x1.3.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <strong>EcoScore Engine</strong>
+                <p>Simulador frontend do sistema de gamificação.</p>
+            </div>
+            <div class="footer-links">
+                <strong>Solução</strong>
+                <a href="sobre.html">Sobre</a>
+                <a href="empresas.html">Empresas</a>
+            </div>
+            <div class="footer-links">
+                <strong>Projeto</strong>
+                <a href="faq.html">FAQ</a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
