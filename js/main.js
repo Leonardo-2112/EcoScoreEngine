@@ -144,3 +144,10 @@ function setupDashboardControls() {
   range.addEventListener("input", update);
   update();
 }
+
+setupNavigation();
+setupTabs();
+setupFaq();
+setupContactForm();
+setupCalculator();
+setupDashboardControls();
