@@ -575,6 +575,10 @@ textarea {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
+  
+  .flow {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
