@@ -603,4 +603,7 @@ textarea {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+   .flow {
+    grid-template-columns: 1fr;
+  }
 }
