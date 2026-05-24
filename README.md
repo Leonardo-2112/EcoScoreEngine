@@ -50,14 +50,20 @@ EcoScoreEngine/
 │   ├── integrantes.html        
 │   ├── faq.html                
 │   └── contato.html            
-└── assets/
-    ├── css/
-    │   └── styles.css          
-    ├── js/
-    │   └── main.js             
-    └── img/
-        ├── hero-ecoscore.svg   
-        └── member-placeholder.svg  
+|
+├── css/
+│   └── styles.css          
+├── js/
+│   └── main.js             
+└── img/
+    ├── hero-ecoscore.svg   
+    ├── foto_leo.png
+    ├── foto_syang.png
+    ├── foto_jones.png
+    ├── foto_vitor.png
+    └── foto_machado.png
+    
+
 ```
 
 ---
