@@ -1,8 +1,26 @@
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+
+// Mesmos links do nav-links original, agora como rotas do React Router.
+const links = [
+  { to: "/", label: "Início" },
+  { to: "/sobre", label: "Sobre" },
+  { to: "/app", label: "App" },
+  { to: "/empresas", label: "Empresas" },
+  { to: "/integrantes", label: "Integrantes" },
+  { to: "/faq", label: "FAQ" },
+  { to: "/contato", label: "Contato" },
+];
+
+// Header reutilizado em todas as páginas via Layout (Bloco 2 da Sprint 3).
+// O toggle do menu mobile usa useState (igual ".nav-links.open" do main.js
+// original, que fazia classList.toggle). O link ativo usa useLocation
+// (já visto na Aula 6) para comparar com o pathname atual, no lugar do
+// "location.pathname" puro do JavaScript do protótipo.
 export function Header() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
-
-
+  
   return (
     <header className="sticky top-0 z-20 bg-bg/95 border-b border-border backdrop-blur-md">
       <nav
