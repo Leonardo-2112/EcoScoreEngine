@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/*
+  Aqui definimos os "design tokens" do projeto (cores, fonte) usando a
+  sintaxe @theme do Tailwind v4. Isso gera classes utilitárias novas
+  automaticamente: --color-primary vira bg-primary, text-primary, border-primary, etc.
+  Os valores são os mesmos usados no style.css original (Sprint 1-2),
+  só que agora acessíveis como classes Tailwind em vez de CSS solto.
+*/
+@theme {
+  --color-bg: #f6f8f5;
+  --color-surface: #ffffff;
+  --color-surface-strong: #edf4ee;
+  --color-text: #17211b;
+  --color-muted: #5a675f;
+  --color-primary: #167a58;
+  --color-primary-dark: #0d4d39;
+  --color-accent: #f2b84b;
+  --color-blue: #2673a6;
+  --color-danger: #b84a4a;
+  --color-border: #dce7df;
+  --font-sans: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+/*
+  @layer base: reset/estilos globais mínimos, equivalentes ao topo do
+  style.css original. Não são "classes" que usamos nos componentes,
+  são o comportamento padrão do body/html/img/a, então faz sentido
+  ficar aqui e não repetido como classe em todo elemento.
+*/
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply m-0 bg-bg text-text font-sans leading-relaxed;
+  }
+  img {
+    @apply block max-w-full;
+  }
+  a {
+    @apply text-inherit no-underline;
+  }
+}
