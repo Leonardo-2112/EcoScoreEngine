@@ -2,7 +2,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
-  
+
   return (
     <header className="sticky top-0 z-20 bg-bg/95 border-b border-border backdrop-blur-md">
       <nav
@@ -16,7 +16,17 @@ export function Header() {
           EcoScore Engine
         </Link>
  
-     
+            <button
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded={open}
+          onClick={() => setOpen((prev) => !prev)}
+          className="md:hidden w-[42px] h-[42px] border border-border rounded-lg bg-surface cursor-pointer"
+        >
+          <span className="block w-[18px] h-0.5 mx-auto my-1 bg-text" />
+          <span className="block w-[18px] h-0.5 mx-auto my-1 bg-text" />
+          <span className="block w-[18px] h-0.5 mx-auto my-1 bg-text" />
+            </button>
  
         <div
           className={`
