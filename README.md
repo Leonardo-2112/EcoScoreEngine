@@ -1,131 +1,124 @@
 # EcoScore Engine
 
-> Plataforma de engajamento ESG com métricas rastreáveis — ações sustentáveis viram pontos, missões, créditos e relatórios de impacto para empresas patrocinadoras.
+![Hero EcoScore Engine](./public/img/hero-ecoscore.svg)
 
-Protótipo frontend multipáginas desenvolvido para o **Challenge SoulUp/FIAP 2026**.
+Plataforma de engajamento ESG desenvolvida para o **Challenge SoulUp / FIAP 2026**. Usuários registram ações sustentáveis (reciclagem, transporte público, economia de energia e água, voluntariado ambiental), que são convertidas em pontos, missões, níveis e créditos. Empresas patrocinam campanhas e acompanham o impacto ambiental gerado através de um dashboard com métricas ESG.
 
----
-
-## Sobre o Projeto
-
-O **EcoScore Engine** conecta usuários que praticam ações sustentáveis com empresas que precisam de métricas ESG rastreáveis para compliance, campanhas e relatórios de impacto.
-
-A plataforma registra ações sustentáveis verificáveis, calcula pontos com base em impacto, frequência, confiabilidade e nível do usuário, converte pontos em créditos internos e entrega dashboards para campanhas ESG patrocinadas por empresas.
-
-### Problema Abordado
-
-Usuários perdem engajamento quando ações sustentáveis não geram retorno claro. Empresas, por outro lado, precisam de métricas ESG rastreáveis para compliance, reputação e relatórios. O desafio é conectar esses dois lados com uma lógica transparente, antifraude e escalável.
-
-### Solução Proposta
-
-- Registro de ações sustentáveis verificáveis
-- Pontuação calculada por: Impacto × Frequência × Confiabilidade × Bônus de Nível
-- Conversão: 100 pontos = 1 crédito interno | 10 créditos = R$ 1,00
-- Dashboard ESG para empresas patrocinadoras
-- Sistema de missões e níveis para engajamento contínuo
+Este repositório contém a **Sprint 3** do projeto: migração completa do protótipo estático (HTML/CSS/JS puro, Sprints 1-2) para uma aplicação React.
 
 ---
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias utilizadas
 
-| Tecnologia | Uso |
-|---|---|
-| HTML5 semântico | Estrutura e organização das páginas |
-| CSS3 responsivo | Estilização, layout e responsividade |
-| JavaScript puro (ES6+) | Interatividade e funcionalidades dinâmicas |
-| SVG | Ícones e imagens vetoriais locais |
+- [React](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/) (v4, via `@tailwindcss/vite`)
+- [React Router DOM](https://reactrouter.com/)
+- [React Hook Form](https://react-hook-form.com/)
 
 ---
 
-## Estrutura de Pastas
+## 📁 Estrutura de pastas
 
 ```
-EcoScoreEngine/
-├── index.html                  
-├── README.md                   
-├── pages/
-│   ├── sobre.html              
-│   ├── app.html               
-│   ├── empresas.html           
-│   ├── integrantes.html        
-│   ├── faq.html                
-│   └── contato.html            
-|
-├── css/
-│   └── styles.css          
-├── js/
-│   └── main.js             
-└── img/
-    ├── hero-ecoscore.svg   
-    ├── foto_leo.png
-    ├── foto_syang.png
-    ├── foto_jones.png
-    ├── foto_vitor.png
-    └── foto_machado.png
-    
-
+ecoscore-react/
+├── public/
+│   └── img/                  # fotos da equipe e imagem do hero
+├── src/
+│   ├── components/           # componentes reutilizáveis (Header, Footer, Card, Button, etc.)
+│   ├── pages/                # uma página por rota (Home, Sobre, App, Empresas, Integrantes, FAQ, Contato)
+│   ├── data/                 # dados estáticos (integrantes)
+│   ├── types/                # tipagens TypeScript (Member, Calculator)
+│   ├── App.tsx                # definição das rotas
+│   ├── main.tsx               # ponto de entrada + BrowserRouter
+│   └── index.css              # import do Tailwind + tokens de tema (@theme)
+├── index.html
+├── vite.config.ts
+├── package.json
+└── README.md
 ```
 
 ---
 
-## Páginas do Projeto
+## ▶️ Como executar localmente
 
-| Página | Arquivo | Descrição |
-|---|---|---|
-| Início | `index.html` | Apresentação do projeto, fluxo da solução e estatísticas |
-| Sobre | `pages/sobre.html` | Problema, solução proposta, fórmula de pontuação e roadmap |
-| App | `pages/app.html` | Simulador de pontuação ESG interativo (página da solução) |
-| Empresas | `pages/empresas.html` | Dashboard ESG e modelo de negócio B2B (página da solução) |
-| Integrantes | `pages/integrantes.html` | Equipe com nome, RM, turma, GitHub e LinkedIn |
-| FAQ | `pages/faq.html` | Perguntas frequentes em formato accordion |
-| Contato | `pages/contato.html` | Formulário com validação em JavaScript |
+```bash
+# clonar o repositório
+git clone <https://github.com/Leonardo-2112/EcoScoreEngine>
+cd ecoscore-react
 
----
+# instalar as dependências
+npm install
 
-## Funcionalidades JavaScript
-
-- **Menu responsivo** — botão hambúrguer para navegação em dispositivos móveis
-- **Tabs interativas** — navegação por abas no modelo de negócio (página Empresas)
-- **Accordion** — perguntas e respostas expansíveis na página FAQ
-- **Validação de formulário** — campos obrigatórios, formato de e-mail e feedback visual
-- **Simulador de pontuação** — cálculo dinâmico de pontos, créditos e valor em reais (página App)
-- **Dashboard ESG** — controle de investimento com atualização de métricas em tempo real (página Empresas)
-- **Destaque de link ativo** — menu indica a página atual automaticamente
-
----
-
-## Autores e Créditos
-
-**Turma:** 1TDSPV
-
-| Nome | RM | GitHub | LinkedIn |
-|---|---|---|---|
-| Leonardo Afonço Sousa | RM573982 | [Leonardo-2112](https://github.com/Leonardo-2112) | [leonardoafoncosousa](https://www.linkedin.com/in/leonardoafoncosousa/) |
-| Matheus Jones | RM573559 | [Matheus-Jones](https://github.com/Matheus-Jones) | [matheus-jones10](https://www.linkedin.com/in/matheus-jones10/) |
-| Syang Cristina Gomes Souza | RM569259 | [SyangSouzaa](https://github.com/SyangSouzaa) | [syang-souza](https://www.linkedin.com/in/syang-souza/) |
-| Joao Machado Nascimento | RM572364 | [MachadoJN](https://github.com/MachadoJN) | [machado-493178300)](https://www.linkedin.com/in/jo%C3%A3o-machado-493178300) |
-| Vitor Gonçalves de Souza | RM569023 | [v1torceleste](https://github.com/v1torceleste) | [vitor-souza-39aa422b4](https://www.linkedin.com/in/vitor-souza-39aa422b4/) |
-
----
-
-## Link do Repositório
-
+# subir o servidor de desenvolvimento
+npm run dev
 ```
-https://github.com/Leonardo-2112/EcoScoreEngine
+
+A aplicação abre por padrão em `http://localhost:5173`.
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
 ```
 
 ---
 
-## Contato
+## 🔗 Links
 
-Para dúvidas sobre o projeto, entre em contato pelo e-mail:
+- **Repositório:** `<https://github.com/Leonardo-2112/EcoScoreEngine>`
+---
 
-ecoscore@fiap.com.br
+## 👥 Integrantes
 
-Ou acesse a [página de contato](pages/contato.html) do site.
+<table>
+  <tr>
+    <td align="center">
+      <img src="./public/img/foto_leo.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Leonardo Afonço Sousa"/><br/>
+      <strong>Leonardo Afonço Sousa</strong><br/>
+      RM573982 — 1TDSPV<br/>
+      <a href="https://github.com/Leonardo-2112">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/leonardoafoncosousa/">LinkedIn</a>
+    </td>
+    <td align="center">
+      <img src="./public/img/foto_jones.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Matheus Jones"/><br/>
+      <strong>Matheus Jones</strong><br/>
+      RM573559 — 1TDSPV<br/>
+      <a href="https://github.com/Matheus-Jones">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/matheus-jones10/">LinkedIn</a>
+    </td>
+    <td align="center">
+      <img src="./public/img/foto_syang.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Syang Cristina Gomes Souza"/><br/>
+      <strong>Syang Cristina Gomes Souza</strong><br/>
+      RM569259 — 1TDSPV<br/>
+      <a href="https://github.com/SyangSouzaa">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/syang-souza/">LinkedIn</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./public/img/foto_machado.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Joao Machado Nascimento"/><br/>
+      <strong>Joao Machado Nascimento</strong><br/>
+      RM572364 — 1TDSPV<br/>
+      <a href="https://github.com/MachadoJN">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/jo%C3%A3o-machado-493178300">LinkedIn</a>
+    </td>
+    <td align="center">
+      <img src="./public/img/foto_vitor.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Vitor Gonçalves de Souza"/><br/>
+      <strong>Vitor Gonçalves de Souza</strong><br/>
+      RM569023 — 1TDSPV<br/>
+      <a href="https://github.com/v1torceleste">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/vitor-souza-39aa422b4/">LinkedIn</a>
+    </td>
+    <td></td>
+  </tr>
+</table>
 
 ---
 
-## Observação sobre Uso de IA
+## ✉️ Contato
 
-Este projeto foi estruturado com auxílio de IA generativa para organização e redação inicial. A utilização está documentada conforme o regulamento do Challenge SoulUp/FIAP 2026.
+Dúvidas ou sugestões sobre o projeto: **ecoscore@fiap.com.br**
+
+Projeto acadêmico — Turma **1TDSPV**, FIAP, Challenge SoulUp 2026.
