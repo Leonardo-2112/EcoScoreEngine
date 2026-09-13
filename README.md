@@ -64,3 +64,61 @@ npm run build
 ```
 
 ---
+
+## 🔗 Links
+
+- **Repositório:** `<https://github.com/Leonardo-2112/EcoScoreEngine>`
+---
+
+## 👥 Integrantes
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="./public/img/foto_leo.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Leonardo Afonço Sousa"/><br/>
+      <strong>Leonardo Afonço Sousa</strong><br/>
+      RM573982 — 1TDSPV<br/>
+      <a href="https://github.com/Leonardo-2112">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/leonardoafoncosousa/">LinkedIn</a>
+    </td>
+    <td align="center">
+      <img src="./public/img/foto_jones.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Matheus Jones"/><br/>
+      <strong>Matheus Jones</strong><br/>
+      RM573559 — 1TDSPV<br/>
+      <a href="https://github.com/Matheus-Jones">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/matheus-jones10/">LinkedIn</a>
+    </td>
+    <td align="center">
+      <img src="./public/img/foto_syang.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Syang Cristina Gomes Souza"/><br/>
+      <strong>Syang Cristina Gomes Souza</strong><br/>
+      RM569259 — 1TDSPV<br/>
+      <a href="https://github.com/SyangSouzaa">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/syang-souza/">LinkedIn</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./public/img/foto_machado.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Joao Machado Nascimento"/><br/>
+      <strong>Joao Machado Nascimento</strong><br/>
+      RM572364 — 1TDSPV<br/>
+      <a href="https://github.com/MachadoJN">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/jo%C3%A3o-machado-493178300">LinkedIn</a>
+    </td>
+    <td align="center">
+      <img src="./public/img/foto_vitor.png" width="90" height="90" style="border-radius:50%;object-fit:cover;" alt="Foto de Vitor Gonçalves de Souza"/><br/>
+      <strong>Vitor Gonçalves de Souza</strong><br/>
+      RM569023 — 1TDSPV<br/>
+      <a href="https://github.com/v1torceleste">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/vitor-souza-39aa422b4/">LinkedIn</a>
+    </td>
+    <td></td>
+  </tr>
+</table>
+
+---
+
+## ✉️ Contato
+
+Dúvidas ou sugestões sobre o projeto: **ecoscore@fiap.com.br**
+
+Projeto acadêmico — Turma **1TDSPV**, FIAP, Challenge SoulUp 2026.
