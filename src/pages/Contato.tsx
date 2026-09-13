@@ -116,4 +116,38 @@ export function Contato() {
                             )}
                         </form>
                     </Card>
+                    
+                    <Card>
+            <h2 className="mb-4">Informações</h2>
+            <p className="text-muted">Projeto acadêmico desenvolvido para o Challenge SoulUp/FIAP 2026.</p>
 
+            <div className="flex items-center justify-between gap-3 py-3 border-b border-border">
+              <span>E-mail</span>
+              <strong>ecoscore@fiap.com.br</strong>
+            </div>
+            <div className="flex items-center justify-between gap-3 py-3 border-b border-border">
+              <span>Turma</span>
+              <strong>1TDSPV</strong>
+            </div>
+            <div className="flex items-center justify-between gap-3 py-3">
+              <span>Repositório</span>
+              <strong>
+                <a href="https://github.com/Leonardo-2112/EcoScoreEngine" target="_blank" rel="noreferrer">
+                  EcoScoreEngine
+                </a>
+              </strong>
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      <Footer
+        description="Contato e validação de formulário."
+        columns={[
+          { title: "Navegação", links: [{ to: "/", label: "Início" }, { to: "/sobre", label: "Sobre" }, { to: "/faq", label: "FAQ" }] },
+          { title: "Solução", links: [{ to: "/app", label: "App" }, { to: "/empresas", label: "Empresas" }] },
+        ]}
+      />
+    </>
+  );
+}
