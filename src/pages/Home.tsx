@@ -64,3 +64,62 @@ export function Home() {
                 </div>
             </div>
         </section>
+
+        <section className="py-[76px] bg-surface">
+            <div className="w-[min(100%-32px,1160px)] mx-auto">
+                <div className="mb-7">
+                    <p className="mb-3.5 text-accent text-sm font-black uppercase">Valor da solução</p>
+                    <h2 className="text-[clamp(1.8rem,4vw,3rem)]">Gamificação para usuários, dados para empresas</h2>
+                </div>
+
+                <div className="grid gap-4.5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    <Card>
+                        <div className="w-[42px] h-[42px] grid place-items-center mb-3.5 rounded-lg bg-surface-strong text-primary-dark font-black">
+                            01
+                        </div>
+                        <h3 className="mb-2.5">Engajamento sustentável</h3>
+                        <p className="text-muted">
+                            Pontos, ranking e missões mantêm o usuário ativo sem depender apenas de recompensa financeira.
+                        </p>
+                    </Card>
+                    <Card>
+                        <div className="w-[42px] h-[42px] grid place-items-center mb-3.5 rounded-lg bg-surface-strong text-primary-dark font-black">
+                            02
+                        </div>
+                        <h3 className="mb-2.5">Economia controlada</h3>
+                        <p className="text-muted">
+                            Créditos funcionam como moeda intermediária, com limite diário e taxa de conversão previsível.
+                        </p>
+                    </Card>
+                    <Card>
+                        <div className="w-[42px] h-[42px] grid place-items-center mb-3.5 rounded-lg bg-surface-strong text-primary-dark font-black">
+                            03
+                        </div>
+                        <h3 className="mb-2.5">Campanhas ESG</h3>
+                        <p className="text-muted">
+                            Empresas patrocinam desafios, acompanham impacto e recebem indicadores para relatórios e reputação.
+                        </p>
+                    </Card>
+                </div>
+            </div>
+        </section>
+
+      <section className="py-[76px]">
+        <div className="w-[min(100%-32px,1160px)] mx-auto grid gap-4.5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <StatBlock value="1.000" label="pontos = R$ 1,00" />
+          <StatBlock value="4" label="níveis de evolução" />
+          <StatBlock value="3" label="ações por missão" />
+          <StatBlock value="2" label="tipos de ações por dia" />
+        </div>
+      </section>
+
+      <Footer
+        description="Protótipo frontend para o Challenge SoulUp/FIAP 2026."
+        columns={[
+          { title: "Páginas", links: [{ to: "/sobre", label: "Sobre" }, { to: "/app", label: "App" }, { to: "/empresas", label: "Empresas" }] },
+          { title: "Projeto", links: [{ to: "/integrantes", label: "Integrantes" }, { to: "/faq", label: "FAQ" }, { to: "/contato", label: "Contato" }] },
+        ]}
+      />
+    </>
+  );
+}
