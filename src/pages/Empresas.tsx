@@ -53,7 +53,7 @@ export function Empresas() {
     const formatBRL = (value: number) => value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
     return (
-    <>
+        <>
             <section className="pt-[72px] pb-11 bg-surface-strong">
                 <div className="w-[min(100%-32px,1160px)] mx-auto">
                     <p className="mb-3.5 text-accent text-sm font-black uppercase">Página da solução 2</p>
@@ -133,5 +133,43 @@ export function Empresas() {
                     <Tabs items={tabItems} />
                 </div>
             </section>
+
+            <section className="py-[76px]">
+                <div className="w-[min(100%-32px,1160px)] mx-auto grid gap-4.5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    <Card>
+                        <h3 className="mb-2.5">Por que empresas entram?</h3>
+                        <p className="text-muted">
+                            Compliance ESG, reputação, inteligência de dados, retenção de clientes, engajamento de usuários,
+                            relatórios para investidores e diferencial de mercado.
+                        </p>
+                    </Card>
+                    <Card>
+                        <h3 className="mb-2.5">Planos sugeridos</h3>
+                        <p className="text-muted">
+                            Small: R$ 2k/mês. Business: R$ 10k/mês. Enterprise: R$ 50k/mês, com campanhas e relatórios avançados.
+                        </p>
+                    </Card>
+                    <Card>
+                        <h3 className="mb-2.5">Antifraude</h3>
+                        <p className="text-muted">
+                            Limite de 2 ações por dia por tipo, confiabilidade por validação e redução por repetição preservam a
+                            integridade da campanha.
+                        </p>
+                    </Card>
+                </div>
+            </section>
+
+            <Footer
+                description="Dashboard ESG para campanhas patrocinadas."
+                columns={[
+                    { title: "Solução", links: [{ to: "/app", label: "App" }, { to: "/sobre", label: "Sobre" }] },
+                    { title: "Projeto", links: [{ to: "/integrantes", label: "Integrantes" }, { to: "/contato", label: "Contato" }] },
+                ]}
+            />
+        </>
+    );
+}
+
+
 
 
