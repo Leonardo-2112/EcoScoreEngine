@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 /*
-  Aqui definimos os "design tokens" do projeto (cores, fonte) usando a
-  sintaxe @theme do Tailwind v4. Isso gera classes utilitárias novas
-  automaticamente: --color-primary vira bg-primary, text-primary, border-primary, etc.
-  Os valores são os mesmos usados no style.css original (Sprint 1-2),
-  só que agora acessíveis como classes Tailwind em vez de CSS solto.
+  Design tokens do projeto (sintaxe @theme do Tailwind v4). Cada variável
+  gera classes utilitárias: --color-primary vira bg-primary, text-primary...
+  As cores verdes são as da Sprint 3. Entram as cores do protótipo
+  (verde-claro dos cartões e vermelho da caixa de erro) e as fontes
+  carregadas pelo Google Fonts no index.html, no mesmo padrão do NexStore.
 */
 @theme {
   --color-bg: #f6f8f5;
@@ -15,30 +15,62 @@
   --color-muted: #5a675f;
   --color-primary: #167a58;
   --color-primary-dark: #0d4d39;
+  --color-primary-light: #d6f1dd;
+  --color-primary-line: #a9d8b6;
   --color-accent: #f2b84b;
   --color-blue: #2673a6;
   --color-danger: #b84a4a;
+  --color-danger-dark: #8f2f1f;
+  --color-danger-bg: #fbe6e0;
   --color-border: #dce7df;
   --font-sans: Inter, "Segoe UI", Arial, sans-serif;
+  --font-display: "Space Grotesk", Inter, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 
 /*
-  @layer base: reset/estilos globais mínimos, equivalentes ao topo do
-  style.css original. Não são "classes" que usamos nos componentes,
-  são o comportamento padrão do body/html/img/a, então faz sentido
-  ficar aqui e não repetido como classe em todo elemento.
+  @layer base: comportamento padrão de html, body, img e links.
 */
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    @apply m-0 bg-bg text-text font-sans leading-relaxed;
+    @apply m-0 bg-bg text-text font-sans leading-relaxed antialiased;
   }
   img {
     @apply block max-w-full;
   }
   a {
     @apply text-inherit no-underline;
+  }
+  button:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+/*
+  @layer components: classes reutilizáveis com @apply (padrão do NexStore).
+  Reproduzem os elementos que se repetem nas telas do protótipo.
+*/
+@layer components {
+  /* Cartão branco com borda (opções da tela 06, linhas do ranking...) */
+  .card {
+    @apply rounded-lg border border-border bg-surface;
+  }
+
+  /* Botão principal verde-escuro ("Entrar", "Continuar", "Converter agora") */
+  .btn-primary {
+    @apply inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-primary-dark px-4 py-2.5 text-sm font-bold text-white transition hover:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  /* Botão secundário verde-claro ("Cadastrar-se", "Escolher outra ação") */
+  .btn-secondary {
+    @apply inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-primary-line bg-primary-light px-4 py-2.5 text-sm font-bold text-primary-dark transition hover:bg-[#c4e9cf] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  /* Campo de formulário das telas de login, cadastro, validação e saque */
+  .field {
+    @apply w-full rounded-lg border border-border bg-surface px-3 py-2.5 text-sm text-text placeholder:text-[#9aa59e] focus:border-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 aria-invalid:border-danger;
   }
 }
