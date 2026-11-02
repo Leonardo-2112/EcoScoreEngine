@@ -143,10 +143,10 @@ Os ícones são do [lucide-react](https://lucide.dev/) e seguem o protótipo (fo
 
 | Link | Endereço |
 |---|---|
-| Repositório GitHub | `https://github.com/Leonardo-2112/EcoScoreEngine` |
-| Vídeo no YouTube | `` |
-| Aplicação na Vercel | `https://ecoscoreengine.vercel.app` |
-| API publicada (Render) | `https://ecoscoreengine-api.onrender.com` |
+| Repositório GitHub | https://github.com/Leonardo-2112/EcoScoreEngine |
+| Vídeo no YouTube | https://youtu.be/15gs5f2rwrk |
+| Aplicação na Vercel | https://ecoscoreengine.vercel.app |
+| API publicada (Render) | https://ecoscoreengine-api.onrender.com |
 
 **Rodando localmente** (Node.js 20 ou superior):
 
